@@ -1,0 +1,7 @@
+create table Course
+(
+id  integer not null,
+name varchar(250),
+primary key(id)
+);
+insert into Course(id,name) values (10001,'Pankaj kumar);

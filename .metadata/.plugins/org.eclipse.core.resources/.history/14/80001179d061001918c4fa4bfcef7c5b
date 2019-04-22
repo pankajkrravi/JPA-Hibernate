@@ -1,0 +1,29 @@
+package com.goomo.DB_Connection;
+
+import java.util.List;
+
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.goomo.fntity.Persion;
+
+
+@SpringBootApplication
+public class DbConnectionApplication implements CommandLineRunner {
+	private org.slf4j.Logger logger = LoggerFactory.getLogger(this.getClass());
+	@Autowired
+	Persion_Jdbc_DAO dao;
+
+	public static void main(String[] args) {
+		SpringApplication.run(DbConnectionApplication.class, args);
+	}
+
+	@Override
+	public void run(String... args) throws Exception {
+		List<Persion> findAll = dao.findAll();
+	}
+
+}

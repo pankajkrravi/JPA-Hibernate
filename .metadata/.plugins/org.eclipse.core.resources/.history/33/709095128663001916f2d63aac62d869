@@ -1,0 +1,6 @@
+insert into Course(id,name,created_Date,last_updated_Date) values(10001,'Java EE',sysdate(),sysdate());
+insert into Course(id,name,created_Date,last_updated_Date) values(10002,'core Java',sysdate(),sysdate());
+insert into Course(id,name,created_Date,last_updated_Date) values(10003,'spring',sysdate(),sysdate());
+insert into Course(id,name,created_Date,last_updated_Date) values(10004,'ATG Framework',sysdate(),sysdate());
+insert into Course(id,name,created_Date,last_updated_Date) values(10005,'React EE',sysdate(),sysdate());
+insert into Course(id,name,created_Date,last_updated_Date) values(10006,'Mocroservices',sysdate(),sysdate());

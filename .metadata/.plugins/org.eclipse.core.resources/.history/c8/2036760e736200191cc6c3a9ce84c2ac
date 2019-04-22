@@ -1,0 +1,8 @@
+package com.goomo;
+
+public class MyMathTest {
+    public void test()
+    {
+    	
+    }
+}

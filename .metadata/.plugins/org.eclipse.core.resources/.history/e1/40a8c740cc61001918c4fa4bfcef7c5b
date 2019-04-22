@@ -1,0 +1,8 @@
+create table persion
+(
+id  integer not null,
+name varchar(250) not null,
+location varchar(250),
+birth_date timestamp,
+primary key(id)
+);

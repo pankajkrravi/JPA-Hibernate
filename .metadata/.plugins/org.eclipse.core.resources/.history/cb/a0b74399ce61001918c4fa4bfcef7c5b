@@ -1,0 +1,10 @@
+package com.goomo.fntity;
+
+import java.util.Date;
+
+public class Persion {
+   private int id;
+   private String name;
+   private String location;
+   private Date birthdate;
+}

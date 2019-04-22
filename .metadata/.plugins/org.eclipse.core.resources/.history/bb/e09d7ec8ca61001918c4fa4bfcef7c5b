@@ -1,0 +1,6 @@
+create table persion
+()
+id
+name
+location
+birth_date

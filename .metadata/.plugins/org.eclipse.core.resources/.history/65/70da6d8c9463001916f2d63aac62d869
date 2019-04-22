@@ -1,0 +1,5 @@
+package com.goomo.jpa.AdvJPAProject.Reopsitory;
+
+public class StudentRepository {
+
+}

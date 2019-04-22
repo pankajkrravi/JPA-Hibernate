@@ -1,0 +1,9 @@
+package com.goomo.jpa.AdvJPAProject.Entity;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Course {
+
+}
+ 

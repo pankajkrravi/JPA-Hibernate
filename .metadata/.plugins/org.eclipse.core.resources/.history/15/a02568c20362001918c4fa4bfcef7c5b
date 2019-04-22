@@ -1,0 +1,5 @@
+package com.goomo.JPA_Project.jpa;
+
+public class PersonRepository {
+
+}

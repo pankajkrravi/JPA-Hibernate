@@ -1,0 +1,6 @@
+insert into Course(id,name) values(10001,'Java EE');
+insert into Course(id,name) values(10002,'core Java');
+insert into Course(id,name) values(10003,'spring');
+insert into Course(id,name) values(10004,'ATG Framework');
+insert into Course(id,name) values(10005,'Java EE');
+insert into Course(id,name) values(10006,'Java EE');

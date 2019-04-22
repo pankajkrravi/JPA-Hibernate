@@ -1,0 +1,60 @@
+package com.goomo.jpa.AdvJPAProject.Reopsitory;
+
+import javax.persistence.EntityManager;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.goomo.jpa.AdvJPAProject.Entity.Student;
+
+@Repository
+@Transactional
+public class StudentRepository {
+	private Logger logger = LoggerFactory.getLogger(Student.class);
+
+	@Autowired
+	EntityManager entityManager;
+	// find by id
+	// save course
+	// delete by id
+
+	public Student findById(Long id) {
+		return entityManager.find(Student.class, id);
+	}
+
+	public Student save(Student course) {
+		if (course.getId() == null) {
+			// insert data
+			entityManager.persist(course);
+		} else {
+			// update
+			entityManager.merge(course);
+		}
+		return course;
+	}
+
+	public void deleteById(Long id) {
+		Student course = entityManager.find(Student.class, id);
+		entityManager.remove(course);
+	}
+
+	public void playWithEntitymanager() {
+		// logger.info("play with Entity manager start");
+		Student course1 = new Student("web services first");
+		entityManager.persist(course1);
+		Student course2 = findById(10001L);
+		course2.setName("HTML, css updated");
+		/*
+		 * course1.setName("web services  updated"); entityManager.flush(); Student
+		 * course2 = new Student("Angular JS"); entityManager.persist(course2);
+		 * entityManager.flush(); entityManager.clear();
+		 * course1.setName("Data structure "); entityManager.flush();
+		 * entityManager.detach(course2); course2.setName("Angular JS updated");
+		 * entityManager.flush();
+		 */
+	}
+
+}

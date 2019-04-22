@@ -1,0 +1,15 @@
+package com.goomo;
+
+import org.junit.jupiter.api.Test;
+
+public class MyMathTest {
+	// sum 1,2,3--->6
+	@Test
+	public void sum_wirh_ThreeNumber() {
+		MyMathClass myMathClass = new MyMathClass();
+		int sum = myMathClass.sum(new int[] { 1, 2, 3 });
+		System.out.println(sum);
+		//check whether the result is 6
+		
+	}
+}

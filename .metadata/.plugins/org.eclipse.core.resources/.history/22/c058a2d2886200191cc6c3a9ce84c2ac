@@ -1,0 +1,13 @@
+package com.goomo.jpa.AdvJPAProject;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class AdvJpaProjectApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(AdvJpaProjectApplication.class, args);
+	}
+
+}

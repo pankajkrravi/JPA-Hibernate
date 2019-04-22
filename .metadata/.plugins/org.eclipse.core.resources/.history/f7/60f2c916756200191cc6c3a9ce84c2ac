@@ -1,0 +1,24 @@
+package com.goomo;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
+
+public class MyMathTest {
+	// sum 1,2,3--->6
+	@Test
+	public void sum_with_ThreeNumber() {
+		MyMathClass myMathClass = new MyMathClass();
+		int result = myMathClass.sum(new int[] { 1, 2, 3 });
+		System.out.println(result);
+		//check whether the result is 6
+		//i.e result==6
+		assertEquals(6, result);
+	}
+	@Test
+	public void sum_with_twoNumber() {
+		MyMathClass myMathClass = new MyMathClass();
+		int result = myMathClass.sum(new int[] { 1, 2});
+		assertEquals(3, result);
+	}
+}

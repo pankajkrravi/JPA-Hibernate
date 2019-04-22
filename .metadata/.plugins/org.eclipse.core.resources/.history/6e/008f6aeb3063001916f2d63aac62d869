@@ -1,0 +1,8 @@
+#enabling H2 Console
+spring.h2.console.enabled=true
+#turn statistic on
+spring.jpa.properties.hibernat.generate_statistic=true
+logging.level.org.hibernate.stat=debug
+#show all queri#format queries
+spring.jpa.properties.hibernate.format-sql=true
+logging.level.org.hibernate.type=debug

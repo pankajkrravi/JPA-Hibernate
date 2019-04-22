@@ -1,0 +1,11 @@
+package com.goomo;
+
+import org.junit.jupiter.api.Test;
+
+public class MyMathTest {
+	@Test
+    public void sum_wirh_ThreeNumber()
+    {
+    	
+    }
+}

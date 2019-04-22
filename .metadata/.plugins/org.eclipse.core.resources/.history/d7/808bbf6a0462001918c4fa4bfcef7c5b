@@ -1,0 +1,13 @@
+package com.goomo.JPA_Project.jpa;
+//Repository
+//Transaction
+
+import com.goomo.JPA_Project.Person;
+
+public class PersonRepository {
+  //connect to db
+	public Person findById(int id)
+	{
+		
+	}
+}

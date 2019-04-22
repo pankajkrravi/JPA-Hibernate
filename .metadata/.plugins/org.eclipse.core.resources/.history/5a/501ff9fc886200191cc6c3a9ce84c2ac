@@ -1,0 +1,24 @@
+package com.goomo.jpa.AdvJPAProject;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.goomo.jpa.AdvJPAProject.Reopsitory.CourseRepository;
+
+@SpringBootApplication
+public class AdvJpaProjectApplication implements CommandLineRunner{
+	
+	@Autowired
+	private CourseRepository repository;
+	public static void main(String[] args) {
+		SpringApplication.run(AdvJpaProjectApplication.class, args);
+	}
+
+	@Override
+	public void run(String... args) throws Exception {
+		
+	}
+
+}

@@ -1,0 +1,15 @@
+package com.goomo.JPA_Project.jpa;
+//Repository
+//Transaction
+
+import org.springframework.stereotype.Repository;
+
+import com.goomo.JPA_Project.Person;
+@Repository
+public class PersonRepository {
+  //connect to db
+	public Person findById(int id)
+	{
+		
+	}
+}

@@ -1,0 +1,5 @@
+package com.goomo.JPA_Demo;
+
+public class Book {
+
+}

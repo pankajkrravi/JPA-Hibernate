@@ -1,0 +1,8 @@
+package com.goomo.jpa.AdvJPAProject.Entity;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Review {
+private Long id;
+}

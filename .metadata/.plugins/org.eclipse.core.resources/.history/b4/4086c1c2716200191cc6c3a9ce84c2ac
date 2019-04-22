@@ -1,0 +1,11 @@
+package com.goomo;
+
+public class MyMathClass {
+    
+	public int sum(int [] numbers)
+	{
+		for (int i : numbers) {
+			sum+=i;
+		}
+	}
+}

@@ -1,0 +1,4 @@
+#enabling H2 Console
+spring.h2.console.enabled=true
+spring.jpa.show-sql=true
+#logging.level.org.springframework.web:

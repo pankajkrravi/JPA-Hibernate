@@ -1,0 +1,5 @@
+package com.goomo.jpa.AdvJPAProject;
+
+public class Course {
+
+}

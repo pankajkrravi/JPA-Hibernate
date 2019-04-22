@@ -1,0 +1,8 @@
+package com.goomo.JPA_Demo;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class BookController {
+
+}
